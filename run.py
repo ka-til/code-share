@@ -64,7 +64,7 @@ class run(object):
             print(r_negative_stamp[store_index[0]-1] - r_negative_stamp[0])
             print(r_negative_stamp[r_negative_stamp.size-1] - r_negative_stamp[store_index[len(store_index) - 1]+1])
             print(store_index[0]-1)
-            Ncuts_h_size = len(Ncuts_h) #the number of cuts ie how sets of huge jumps were removed
+            Ncuts_h_size = len(Ncuts_h) #the number of cuts ie how many sets of huge jumps were removed
             
             sum_1 = time.sum() #summing all the time difference gives the run time without considering the high jumps
         r_high_jumps = r_negative_stamp[(r_negative_stamp < 1e11) & (r_negative_stamp > -1e7)] #removing the huge jumps
